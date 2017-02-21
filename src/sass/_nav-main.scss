@@ -1,0 +1,28 @@
+.nav-main {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  background-color: $blue;
+
+  &__item {
+    display: inline-block;
+  }
+
+  &__link {
+    display: inline-block;
+    height: 71px;
+    padding: 27.4px 24.5px 24.4px;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: .09em;
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+
+    &:hover {
+      color: #ef5966;
+      background-color: #fff;
+    }
+  }
+}

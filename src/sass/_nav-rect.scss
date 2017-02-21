@@ -1,0 +1,62 @@
+.nav-rect {
+  display: flex;
+  justify-content: flex-end;
+  width: 981px;
+  height: 91px;
+  margin-left: auto;
+  padding: 1px 0;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  background-color: #f6f6f6;
+
+  &__link {
+    font-size: 16px;
+    line-height: 89px;
+    letter-spacing: .09em;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+
+    &_blue {
+      background-color: $blue;
+    }
+
+    &_red {
+      background-color: $red;
+    }
+
+    &_without-icon {
+      width: 116px;
+    }
+
+    &_with-icon {
+      width: 142px;
+    }
+
+    &_with-icon::after {
+      position: relative;
+      display: inline-block;
+      content: ''; 
+    }
+
+    &_wishlist::after {
+      left: 10px;
+      top: 3px;
+      width: 23px;
+      height: 25px;
+      background-image: url(img/gift.png);
+    }
+
+    &_cart::after {
+      left: 5px;
+      top: 5px;
+      width: 28px;
+      height: 24px;
+      background-image: url(img/cart.png);
+    } 
+  }
+
+  &__link:not(:last-child) {
+    margin-right: 5px;
+  }
+}

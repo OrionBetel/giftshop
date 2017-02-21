@@ -5,7 +5,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var htmlmin = require('gulp-htmlmin');
  
 gulp.task('sass', function() {
-  return gulp.src('src/styles/sass/*.scss')
+  return gulp.src('src/sass/*.scss')
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(autoprefixer({browsers: ['last 2 versions'], cascade: false}))
     .pipe(rename('styles.min.css'))
@@ -13,7 +13,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task('sass:watch', function () {
-  gulp.watch('src/styles/sass/*.scss', ['sass']);
+  gulp.watch('src/sass/*.scss', ['sass']);
 });
 
 gulp.task('html', function() {
@@ -23,5 +23,5 @@ gulp.task('html', function() {
 });
 
 gulp.task('default', function () {
-  gulp.watch(['src/styles/sass/*.scss', 'src/*.html'], ['sass', 'html']);
+  gulp.watch(['src/sass/*.scss', 'src/*.html'], ['sass', 'html']);
 });
