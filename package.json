@@ -1,0 +1,23 @@
+{
+  "name": "giftshop",
+  "version": "1.0.0",
+  "description": "It can be an index page of some giftshop",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OrionBetel/giftshop.git"
+  },
+  "author": "Alexander Kharchenko",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/OrionBetel/giftshop/issues"
+  },
+  "homepage": "https://github.com/OrionBetel/giftshop#readme",
+  "devDependencies": {
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-htmlmin": "^3.0.0"
+  }
+}
