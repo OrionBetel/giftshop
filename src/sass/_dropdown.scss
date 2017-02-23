@@ -1,0 +1,75 @@
+.dropdown {
+  position: absolute;
+  top: calc(100% + 5px);
+  width: 263px;
+  margin: 0;
+  padding: 8px 18px 0 19px;
+  background-color: rgba(255, 255, 255, .9);
+  list-style: none;
+  box-shadow: 0 0 16px rgba(0, 0, 0, .33);
+
+  &_hidden {
+    visibility: hidden;
+  }
+
+  &__link {
+    display: block;
+    padding: 8.5px 0 14.5px 0;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: .09em;
+    color: $red;
+    text-align: left;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+}
+
+.dropdown-item {
+  border-bottom: 1px solid #cacaca;
+  padding: 17px 0 18px 2px;
+  text-align: left;
+
+  &_maverick {
+    padding-top: 19px;
+  }
+
+  &__img {
+    float: left;
+    width: 72px;
+    height: auto;
+    margin-right: 12px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-top: -4px;
+    margin-bottom: 3.5px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: .09em;
+    color: #ef5966;
+    text-transform: capitalize;
+  }
+
+  &__description {
+    margin: 0;
+    margin-bottom: 6.5px;
+    font-size: 14px;
+    line-height: 1;
+    color: #454545;
+  }
+
+  &__btn {
+    display: inline-block;
+    width: 117px;
+    font-size: 12px;
+    line-height: 23px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    background-color: $blue;
+  }
+}

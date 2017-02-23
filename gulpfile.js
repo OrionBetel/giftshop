@@ -3,6 +3,8 @@ var sass = require('gulp-sass');
 var rename = require('gulp-rename');
 var autoprefixer = require('gulp-autoprefixer');
 var htmlmin = require('gulp-htmlmin');
+var uglify = require('gulp-uglify');
+var concat = require('gulp-concat');
  
 gulp.task('sass', function() {
   return gulp.src('src/sass/*.scss')
@@ -19,6 +21,13 @@ gulp.task('sass:watch', function () {
 gulp.task('html', function() {
   return gulp.src('src/*.html')
     .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest('dist'));
+});
+
+gulp.task('js', function() {
+  return gulp.src('src/scripts/*.js')
+    .pipe(concat('script.min.js'))
+    .pipe(uglify())
     .pipe(gulp.dest('dist'));
 });
 
