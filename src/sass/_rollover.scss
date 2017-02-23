@@ -1,0 +1,56 @@
+.rollover {
+  display: inline-block;
+  width: 292px;
+  font-size: 0;
+  text-align: center;
+
+  &__title {
+    display: inline-block;
+    width: 103px;
+    font-size: 16px;
+    line-height: 55px;
+    letter-spacing: .09em;
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    background-color: $blue;
+  }
+
+  &__icon {
+    display: inline-block;
+    height: 55px;
+    margin-bottom: -21px;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    &_gift {
+      width: 51px;  
+      background-color: #00a1be;
+      background-image: url(img/gift.png);
+    }
+
+    &_cart {
+      width: 53px;
+      background-color: $red;
+      background-image: url(img/cart.png);
+    }
+  }
+
+  &__price {
+    display: inline-block;
+    width: 81px;
+    padding-top: 11px;
+    padding-bottom: 17px;
+    font-size: 24px;
+    color: #fff;
+    background-color: #323232;
+  }
+
+  &__dollar {
+    font-size: 16px;
+  }
+
+  &__cents {
+    margin-left: -5px;
+  }
+}

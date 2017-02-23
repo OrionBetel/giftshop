@@ -1,0 +1,105 @@
+.slide {
+  position: relative;
+  display: block;
+  float: left;
+  color: inherit;
+  text-decoration: none;
+
+  &_men { 
+    width: 57.264%;
+    margin-right: 5px;
+    padding-top: 410px;
+    padding-bottom: 12px;
+    background-image: url(img/men.jpg);
+  }
+  
+  &_women {
+    width: 42.222%;
+    margin-bottom: 5px;
+    padding-top: 19.572%;
+    padding-bottom: .683%;
+    background-image: url(img/women.jpg);
+  }
+
+  &_kids {
+    width: 494px;
+    height: 245px;
+    padding-top: 13.572%;
+    padding-bottom: .683%;
+    background-image: url(img/kids.jpg);
+  }
+
+  &:hover::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .59);
+    content: '';
+  }
+
+  &:hover .slide-description {
+    visibility: hidden;
+  }
+}
+
+.slide-description {
+  margin-bottom: 2px;
+  padding: 0 16px 13px 21px;
+  background-color: rgba(54, 42, 79, .8);
+
+  &_big {
+    width: 51.94%;
+  }
+
+  &_small {
+    width: 54.048%;
+  }
+
+  &__title {
+    display: block;
+    font-family: 'Aparajita', Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    color: $red;
+    text-transform: uppercase;
+
+    &_big {
+      font-size: 43px;
+      line-height: 1.325;
+    }
+
+    &_small {
+      padding-top: 2px;
+      font-size: 25px;
+      line-height: 1.2;
+    }
+  }
+
+  &__text {
+    line-height: 1.2;
+    color: #fff;
+    text-transform: uppercase;
+
+    &_big {
+      font-size: 13px;
+    }
+
+    &_small {
+      font-size: 12px;
+    }
+  }
+}
+
+.slide-description-auxiliary {
+  width: 348px;
+  padding: 0 12px 0 15px;
+  font-family: 'Aparajita', Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 41px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #dd5967;
+}

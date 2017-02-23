@@ -14,7 +14,9 @@ Array.prototype.forEach.call(document.querySelectorAll('.nav-main__item'),
 
       item.addEventListener('mouseleave', function(event) {
         if (event.relatedTarget && 
-          event.relatedTarget.classList.contains('nav-main__link')) {
+          event.relatedTarget.classList.contains('nav-main__link') ||
+          !event.target.previousElemenSibling ||
+          !event.target.nextElementSibling) {
             dropdown.classList.add('dropdown_hidden');
             link.classList.remove('nav-main__link_hovered');
         }

@@ -7,10 +7,15 @@
 body {
   font-family: 'Lato', Arial, Helvetica, sans-serif;
   background-color: #fff;
-  overflow: scroll; /* temp */
 }
 
 .container {
   max-width: 1170px;
   margin: 0 auto;
+}
+
+.clearfix {
+  content: '';
+  display: table;
+  clear: both;
 }
