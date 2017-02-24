@@ -1,0 +1,36 @@
+.search {
+  display: inline-block;
+  width: 57.264%;
+  padding: 4.358% 0 4.188% 4.871%;
+  font-size: 0;
+  background-color: #f0626e;
+
+  &__field {
+    width: 72.388%;
+    margin-right: 3.134%;
+    border: none;
+    padding: 0 3.432%;
+    font-size: 16px;
+    line-height: 71px;
+    letter-spacing: .09em;
+    color: #424242;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__button {
+    position: relative;
+    top: 22px;
+    width: 53px;
+    height: 53px;
+    border: none;
+    padding: 0;
+    background: url(img/search-icon.png) transparent;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

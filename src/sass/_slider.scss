@@ -6,26 +6,22 @@
   text-decoration: none;
 
   &_men { 
-    width: 57.264%;
+    width: 670px;
+    height: 570px;
     margin-right: 5px;
-    padding-top: 410px;
-    padding-bottom: 12px;
     background-image: url(img/men.jpg);
   }
   
   &_women {
-    width: 42.222%;
+    width: 494px;
+    height: 320px;
     margin-bottom: 5px;
-    padding-top: 19.572%;
-    padding-bottom: .683%;
     background-image: url(img/women.jpg);
   }
 
   &_kids {
     width: 494px;
     height: 245px;
-    padding-top: 13.572%;
-    padding-bottom: .683%;
     background-image: url(img/kids.jpg);
   }
 
@@ -41,20 +37,35 @@
   }
 
   &:hover .slide-description {
-    visibility: hidden;
+    display: none;
+  }
+
+  &:hover .slide-description-auxiliary {
+    display: none;   
+  }
+
+  &__rollover {
+    position: absolute;
+    left: 0;
+    top: 0;
   }
 }
 
 .slide-description {
+  position: absolute;
   margin-bottom: 2px;
   padding: 0 16px 13px 21px;
   background-color: rgba(54, 42, 79, .8);
 
   &_big {
+    left: 0;
+    top: 410px;
     width: 51.94%;
   }
 
   &_small {
+    left: 0;
+    top: 65.5625%;
     width: 54.048%;
   }
 
@@ -93,6 +104,9 @@
 }
 
 .slide-description-auxiliary {
+  position: absolute;
+  left: 0;
+  top: 517px;
   width: 348px;
   padding: 0 12px 0 15px;
   font-family: 'Aparajita', Georgia, 'Times New Roman', Times, serif;
