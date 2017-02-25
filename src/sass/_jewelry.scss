@@ -1,0 +1,48 @@
+.jewelry {
+  position: relative;
+  display: inline-block;
+  width: 42.222%;
+  height: 510px;
+  margin-top: 5px;
+  background-image: url(img/clock.jpg);
+
+  &__title {
+    position: absolute;
+    left: 100%;
+    bottom: 0;
+    width: 80.161%;
+    margin: 0;
+    padding: 2.226% 0 0 5.06%;
+    font-family: 'Aparajita', Georgia, 'Times New Roman', Times, serif;
+    font-size: 64px;
+    line-height: 1.2;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: rgba(54, 42, 79, .58);
+    transform: rotate(-90deg);
+    transform-origin: 0 100%;
+  }
+
+  &__link {
+    position: absolute;
+    right: 13px;
+    top: -5px;
+    display: inline-block;
+    width: 97px;
+    height: 86px;
+    text-align: center;
+    background: url(img/jewelry-link.png) center center no-repeat #ee6470;
+    transform: rotate(90deg);
+
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 100%;
+      display: block;
+      border: 5px solid #c6535d;
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+      content: '';
+    }
+  } 
+}
