@@ -1,0 +1,14 @@
+.crafts {
+  position: relative;
+  float: left;
+  width: 57.264%;
+  height: 335px;
+  background: url(img/crafts-bg.jpg) center center #ffefc2;
+  background-size: cover;
+
+  &__controls {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
