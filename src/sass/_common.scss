@@ -14,7 +14,7 @@ body {
   margin: 0 auto;
 }
 
-.clearfix {
+.clearfix::after {
   content: '';
   display: table;
   clear: both;

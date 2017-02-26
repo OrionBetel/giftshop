@@ -1,0 +1,170 @@
+.products {
+  &__header {
+    border-bottom: 1px solid #b9b9b9;
+  }
+
+  &__title {
+    position: relative;
+    top: 1px;
+    float: left;
+    margin: 0;
+    margin-left: 29px;
+    border-bottom: 1px solid $red;
+    padding: 54px 15px 10px 2px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.2;
+    color: #00a1be;
+    text-transform: capitalize;
+  }
+
+  &__btns {
+    position: relative;
+    top: 23px;
+    float: right;
+    font-size: 0;
+  }
+
+  &__btn {
+    position: relative;
+    display: inline-block;
+    width: 70px;
+    height: 79px;
+    border: none;
+    background-color: #3c3c3c;
+
+    &:hover {
+      background-color: $blue;
+      cursor: pointer;
+    }
+
+    &:first-child {
+      margin-right: 1px;
+    }
+
+    &::before {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      display: block;
+      width: 17px;
+      height: 17px;
+      margin-top: -8.5px;
+      border: 2px solid #fff;
+      content: '';
+      transform: rotate(-45deg);
+    }
+
+    &_prev::before {
+      margin-left: -6px;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+    }
+
+    &_next::before {
+      margin-left: -12px;
+      border-left-color: transparent;
+      border-top-color: transparent;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 27px;
+  }
+
+  &__product {
+    position: relative;
+    display: block;
+    width: 370px;
+    height: 200px;
+    background-size: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &_one {
+      background-image: url(img/product-new-1.jpg);
+    }
+
+    &_two {
+      background-image: url(img/product-new-2.jpg);
+    }
+
+    &_three {
+      background-image: url(img/product-new-3.jpg);
+    }
+
+    &:hover::before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+      width: 370px;
+      height: 200px;
+      background-color: rgba(20, 34, 81, .87);
+      content: '';
+    }
+
+    &:hover * {
+      display: inline-block;
+    }
+  }
+
+  &__rollover {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: none;
+    width: 292px;
+    height: 55px;
+    margin-left: -146px;
+    margin-top: -38px;
+    font-size: 0;
+
+    &-title {
+      display: inline-block;
+      height: 55px;
+      padding: 0 8.225px;
+      font-size: 16px;
+      line-height: 55px;
+      letter-spacing: .09em;
+      color: #fff;
+      text-transform: capitalize;
+      background-color: #05aecc;
+    }
+
+    &-btn {
+      position: relative;
+      top: 21px;
+      display: inline-block;
+      height: 55px;
+      border: none;
+      padding: 0;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &_gift {
+        width: 51px;
+        background: url(img/gift.png) center center no-repeat #00a1be;
+      }
+
+      &_cart {
+        width: 53px;
+        background: url(img/cart.png) center center no-repeat $red;
+      }
+    }
+
+    &-price {
+      position: relative;
+      top: -34px;
+      display: inline-block;
+      width: 85px;
+      height: 55px;
+      background: url(img/rollover-price.jpg) center center / cover no-repeat 
+        #323232;
+    }
+  }
+}
