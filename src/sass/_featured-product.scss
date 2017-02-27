@@ -1,0 +1,103 @@
+.featured-product {
+  position: relative;
+  width: 23.076%;
+  border: 1px solid #ddd;
+  font-size: 0;
+
+  &__image {
+    width: 100%;
+    height: auto;
+  }
+
+  &__feature {
+    position: absolute;
+    left: 0;
+    top: 4.444%;
+    display: inline-block;
+    width: 80px;
+    height: 34px;
+    font-size: 14px;
+    line-height: 34px;
+    letter-spacing: .09em;
+    color: #fff;
+    text-align: center;
+    
+    &_sale {
+      background-color: $red;
+      text-transform: uppercase;
+    }
+
+    &_new {
+      background-color: $blue;
+    }
+  }
+
+  &__title {
+    margin: 2.962% 0 0 4.074%;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: .09em;
+    color: #434343;
+  }
+
+  &__description {
+    margin: 0;
+    border-bottom: 1px solid #ddd;
+    padding: 0 0 4.444% 4.074%;
+    font-size: 13px;
+    line-height: 1.2;
+    letter-spacing: .09em;
+    color: $red;
+  }
+
+  &__btn {
+    height: 50px;
+    border: none;
+    border-right: 2px solid #efefef;
+    padding: 0;
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+    &_tune {
+      width: 20.149%;
+      background-image: url(img/tune-gray.png);
+    }
+
+    &_gift {
+      width: 21.268%;
+      background-image: url(img/gift-gray.png);
+    }
+
+    &_cart {
+      width: 21.268%;
+      background-image: url(img/cart-gray.png);
+    }
+  }
+
+  &__price {
+    position: relative;
+    top: -16px;
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    margin-bottom: -16px;
+    font-size: 24px;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+
+    &_red {
+      background-color: $red;
+    }
+
+    &_blue {
+      background-color: $blue;
+    }
+  }
+
+  &__dollar {
+    font-size: 16px;
+  }
+}
