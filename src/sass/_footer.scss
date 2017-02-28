@@ -1,0 +1,130 @@
+.footer {
+  padding-top: 45.5px;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #b9b9b9;
+    padding-left: 23px;
+  }
+
+  &__bottom {
+    border-bottom: 1px solid #b9b9b9;
+    padding: 16px 8px 19px 24px;
+    font-size: 14px;
+    line-height: 2.142;
+    color: #434343;
+  }
+
+  &__signature {
+    float: right;
+
+    &_name {
+      color: $red;
+    }
+  }
+
+  &-section {
+    &__title {
+      margin: 0;
+      padding-bottom: 34.5px;
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 1.2;
+      color: #434343;
+      text-transform: uppercase;
+
+      &_special {
+        padding-top: 24.5px;
+        padding-bottom: 16.5px;
+      }
+    }
+
+    &__list {
+      margin: 0;
+      padding: 0;
+      padding-bottom: 44px;
+      list-style: none;
+    }
+
+    &__link {
+      font-size: 16px;
+      line-height: 1.875;
+      color: #676767;
+      text-decoration: none;
+      text-transform: lowercase;
+    }
+
+    &__email-field {
+      display: block;
+      width: 377px;
+      height: 71px;
+      border: 1px solid #dedede;
+      padding: 0 1em;
+      font-size: 14px;
+      line-height: 69px;
+      color: #434343;
+
+      &::placeholder {
+        color: #434343;
+        text-align: center;
+        text-transform: uppercase; 
+      }
+    }
+
+    &__btn-submit {
+      display: block;
+      width: 377px;
+      height: 51px;
+      border: none;
+      padding: 0;
+      font-size: 14px;
+      line-height: 51px;
+      color: #fff;
+      text-transform: uppercase;
+      background-color: $blue;
+      text-align: center;
+    }
+
+    &__socials {
+      display: flex;
+      justify-content: flex-start;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      &-item {
+        margin-right: 10px;
+      }
+
+      &-link {
+        display: inline-block;
+        width: 55px;
+        height: 54px;
+        background-position: 50% 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        &_rss {
+          background-image: url(img/rss.png);
+        }
+
+        &_fb {
+          background-image: url(img/fb.png);
+        }
+
+        &_tw {
+          background-image: url(img/twitter.png);
+        }
+
+        &_flickr {
+          background-image: url(img/flickr.png);
+        }
+
+        &_google {
+          background-image: url(img/google.png);
+        }
+      }
+    }
+  }
+}
